@@ -24,5 +24,22 @@ public class DayMain {
          Remember to also to check that you get the expected results
          */
 
+        System.out.println("==========Print power prices=====================");
+        DailyPower.printPowerPrices(powerprices_day);
+        System.out.println();
+
+        System.out.println("==========Print power usage======================");
+        DailyPower.printPowerUsage(powerusage_day);
+        System.out.println();
+
+        System.out.println("==========Compute power usage====================");
+        System.out.println(DailyPower.computePowerUsage(powerusage_day));
+        System.out.println();
+
+        System.out.println("==========Compute spot prices====================");
+        System.out.println(DailyPower.computeSpotPrice(powerusage_day, powerprices_day));
+        System.out.println();
+
+
     }
 }
