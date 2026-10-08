@@ -1,7 +1,5 @@
 package no.hvl.dat100.javel.oppgave1;
 
-import no.hvl.dat100.javel.oppgave2.MonthlyPower;
-
 public class DayMain {
 
     public static void main(String[] args) {
