@@ -5,10 +5,12 @@ import no.hvl.dat100.javel.oppgave3.Customer;
 public class Customers {
 
     private Customer[] Customers;
+    public int length;
 
     // a) Complete constructor
     public Customers(int size) {
         this.Customers = new Customer[size];
+        this.length = size;
     }
 
     // b) count number of non-null references
@@ -64,6 +66,7 @@ public class Customers {
 
         for (int i = 0; i < Customers.length; i++){
             if (Customers[i].getCostumerId() == customer_id){
+                c = Customers[i];
                 Customers[i] = null;
                 deleted = true;
                 break;
