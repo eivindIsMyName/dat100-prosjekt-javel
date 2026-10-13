@@ -31,7 +31,7 @@ public class Customers {
         Customer c = null;
 
         for (Customer customer : Customers){
-            if (customer.customer_id = customer_id){
+            if (customer.getCostumerId() == customer_id){
                 c = customer;
                 break;
             }
@@ -63,7 +63,7 @@ public class Customers {
         Customer c = null;
 
         for (int i = 0; i < Customers.length; i++){
-            if (Customers[i].customer_id == customer_id){
+            if (Customers[i].getCostumerId() == customer_id){
                 Customers[i] = null;
                 deleted = true;
                 break;
