@@ -4,22 +4,22 @@ import no.hvl.dat100.javel.oppgave3.Customer;
 
 public class Customers {
 
-    private Customer[] customers;
+    private Customer[] Customers;
 
     // a) Complete constructor
     public Customers(int size) {
-
-        // TODO
-
+        this.Customers = new Customer[size];
     }
 
     // b) count number of non-null references
     public int countNonNull() {
-
-
         int count = 0;
 
-        // TODO
+        for (Customer customer : Customers){
+            if (customer != null){
+                count++;
+            }
+        }
 
         return count;
     }
@@ -30,7 +30,12 @@ public class Customers {
         boolean funnet = false;
         Customer c = null;
 
-        // TODO
+        for (Customer customer : Customers){
+            if (customer.customer_id = customer_id){
+                c = customer;
+                break;
+            }
+        }
 
         return c;
     }
@@ -40,7 +45,13 @@ public class Customers {
 
         boolean inserted = false;
 
-        // TODO
+        for (int i = 0; i < Customers.length; i++){
+             if (Customers[i] == null){
+                 Customers[i] = c;
+                 inserted = true;
+                 break;
+             }
+        }
 
         return inserted;
     }
@@ -51,7 +62,13 @@ public class Customers {
         boolean deleted = false;
         Customer c = null;
 
-        // TODO
+        for (int i = 0; i < Customers.length; i++){
+            if (Customers[i].customer_id == customer_id){
+                Customers[i] = null;
+                deleted = true;
+                break;
+            }
+        }
 
         return c;
     }
@@ -61,7 +78,7 @@ public class Customers {
 
         Customer[] customers = null;
 
-        // TODO
+        customers = Customers;
 
         return customers;
     }
