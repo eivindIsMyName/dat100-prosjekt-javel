@@ -63,7 +63,7 @@ public class CustomersMain {
 
         System.out.println("===== E) =====");
         Customer ce = customers.removeCustomer(1003);
-        System.out.printf("Expected customer to be deleted Charlie Rose. %nCustomer deleted is: %s and Count is: %s %n", ce.getName(), customers.countNonNull());
+        System.out.printf("Expected customer to be deleted Charlie Rose, and count to be 4. %nCustomer deleted is: %s, and Count is: %s %n", ce.getName(), customers.countNonNull());
         System.out.println("==============");
 
         System.out.println("===== F) =====");
