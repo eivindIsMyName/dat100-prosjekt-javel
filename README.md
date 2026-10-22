@@ -1,6 +1,3 @@
-# Trello link
-https://trello.com/invite/b/6ace06fd791c849809fa34f0/ATTI32b1a24c80a82dd4b9e830db40c1c47f644BAF9A/dat100-programmeringsprojekt
-
 # JavEl Programmeringsprosjekt - Java og Elektrisitet
 
 Strømpriser og støtteordninger er noe som mange personer i Norge er opptatt av for tiden. Prosjektet handler om å implementere et Java program som kan generere strømregninger (fakturaer) for kunder basert på strømforbruk og strømpriser. 
